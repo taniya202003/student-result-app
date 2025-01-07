@@ -1,0 +1,84 @@
+.studentsData-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .studentsData-div {
+    overflow-x: auto;
+  }
+  
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .student-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .student-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .student-table tbody tr:hover {
+    background-color: #e9e9e9;
+  }
+  
+  .student-table img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .editBtn,
+  .deleteBtn,
+  .marksBtn,
+  .special-chance-btn{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .editBtn:hover,
+  .deleteBtn:hover,
+  .marksBtn:hover,
+  .special-chance-btn:hover{
+    background-color: #0056b3;
+}
+  
+  /* Responsive CSS */
+  @media (max-width: 768px) {
+    .studentsData-div {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .student-table {
+      min-width: 100%;
+    }
+  
+    .student-table th,
+    .student-table td {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .student-table th,
+    .student-table td {
+      font-size: 14px;
+    }
+  }
+  
